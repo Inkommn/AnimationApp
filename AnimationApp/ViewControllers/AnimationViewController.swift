@@ -9,7 +9,7 @@ import UIKit
 import SpringAnimation
 
 final class AnimationViewController: UIViewController {
-
+    
     @IBOutlet var springView: SpringView!
     
     @IBOutlet var presentLabel: UILabel!
@@ -20,17 +20,21 @@ final class AnimationViewController: UIViewController {
     
     @IBOutlet var runButton: SpringButton!
     
+    private var currentAnimation: Animation?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         springView.layer.cornerRadius = 15
-        runButtonAction()
     }
-
-    @IBAction func runButtonAction() {
+    
+    @IBAction func runButtonAction(with sender: SpringButton) {
         let randomAnimation = Animation.getRandomAnimation()
-        getRandomAnimation(with: randomAnimation)
         updateLabels(with: randomAnimation)
-
+        getRandomAnimation(with: randomAnimation)
+        sender.animate()
+        
+        
     }
     
     private func updateLabels(with animation: Animation) {
@@ -39,7 +43,6 @@ final class AnimationViewController: UIViewController {
         forceLabel.text = String(format: "force: %.2f", animation.force)
         durationLabel.text = String(format: "duration: %.2f", animation.duration)
         delayLabel.text = String(format: "delay: %.2f", animation.delay)
-
     }
     
     private func getRandomAnimation(with animation: Animation) {
@@ -50,5 +53,12 @@ final class AnimationViewController: UIViewController {
         springView.delay = CGFloat(animation.delay)
         springView.animate()
     }
+    
+    
 }
+    
+            
+
+            
+            
 

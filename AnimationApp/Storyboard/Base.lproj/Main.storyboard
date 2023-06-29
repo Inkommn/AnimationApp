@@ -74,7 +74,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="RUN"/>
                                 <connections>
-                                    <action selector="runButtonAction" destination="Ls6-d3-x1R" eventType="touchUpInside" id="pw7-V6-806"/>
+                                    <action selector="runButtonActionWith:" destination="Ls6-d3-x1R" eventType="touchUpInside" id="vW0-A6-JHI"/>
                                 </connections>
                             </button>
                         </subviews>
