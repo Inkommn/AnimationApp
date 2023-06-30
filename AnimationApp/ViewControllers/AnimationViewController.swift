@@ -25,7 +25,7 @@ final class AnimationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        springView.layer.cornerRadius = 15
+        springView.layer.cornerRadius = 10
     }
     
     @IBAction func runButtonAction(with sender: SpringButton) {
