@@ -59,7 +59,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstItem="1US-f2-Dy1" firstAttribute="top" secondItem="HNu-g4-yuW" secondAttribute="top" constant="44" id="4Cu-Jf-vDE"/>
                                             <constraint firstItem="1US-f2-Dy1" firstAttribute="leading" secondItem="HNu-g4-yuW" secondAttribute="leading" constant="16" id="VZM-R2-tz4"/>
@@ -108,8 +108,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
