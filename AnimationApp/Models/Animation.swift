@@ -17,18 +17,27 @@ extension Animation {
     
     static func getRandomAnimation() -> Animation {
         
-        let animations = DataStore.shared.animations.shuffled()
-        let curves = DataStore.shared.curves.shuffled()
+        let animations = DataStore.shared.animations.randomElement()
+        let curves = DataStore.shared.curves.randomElement()
         
-        let present = animations[0]
-        let curve = curves[0]
-        let force = DataStore.shared.force
-        let duration = DataStore.shared.duration
-        let delay = DataStore.shared.delay
+        let present = animations
+        let curve = curves
+        
+        var force: Double {
+            Double.random(in: 0.5...2.0)
+        }
+        
+        var duration: Double {
+            Double.random(in: 0.3...1.0)
+        }
+        
+        var delay: Double {
+            Double.random(in: 0.3...1.0)
+        }
         
         return Animation(
-            animation: present,
-            curve: curve,
+            animation: present?.rawValue ?? "",
+            curve: curve?.rawValue ?? "",
             force: force,
             duration: duration,
             delay: delay

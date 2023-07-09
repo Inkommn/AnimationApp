@@ -78,12 +78,12 @@
 		1DDDA8B62A499D5E00871B22 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				1DDDA8CF2A499E2C00871B22 /* App */,
 				1DDDA8CE2A499DA500871B22 /* ViewControllers */,
 				1D778C7E2A4AD807008F15BF /* Models */,
 				1D778C812A4AE213008F15BF /* Services */,
-				1DDDA8D02A499E3700871B22 /* Storyboard */,
 				1DDDA8D12A499E4300871B22 /* Resources */,
+				1DDDA8CF2A499E2C00871B22 /* App */,
+				1DDDA8D02A499E3700871B22 /* Storyboard */,
 			);
 			path = AnimationApp;
 			sourceTree = "<group>";

@@ -69,12 +69,12 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmQ-Bw-AKz" customClass="SpringButton" customModule="SpringAnimation">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmQ-Bw-AKz">
                                 <rect key="frame" x="16" y="483.5" width="288" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="RUN"/>
                                 <connections>
-                                    <action selector="runButtonActionWith:" destination="Ls6-d3-x1R" eventType="touchUpInside" id="vW0-A6-JHI"/>
+                                    <action selector="runButtonActionWith:" destination="Ls6-d3-x1R" eventType="touchUpInside" id="V4o-q7-ml6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,13 +90,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationView" destination="HNu-g4-yuW" id="y7z-3i-KL0"/>
                         <outlet property="curveLabel" destination="kwH-tr-Rkw" id="wfq-jx-4sU"/>
                         <outlet property="delayLabel" destination="LXZ-1f-mCP" id="KrI-Qp-4KF"/>
                         <outlet property="durationLabel" destination="wcX-aX-6ws" id="l3H-QO-cpe"/>
                         <outlet property="forceLabel" destination="Rbd-pc-AXx" id="STT-P3-tNK"/>
                         <outlet property="presentLabel" destination="8iB-pX-wab" id="rIF-kn-H0K"/>
-                        <outlet property="runButton" destination="DmQ-Bw-AKz" id="0bK-yC-6z2"/>
-                        <outlet property="springView" destination="HNu-g4-yuW" id="y7z-3i-KL0"/>
+                        <outlet property="runButton" destination="DmQ-Bw-AKz" id="O4i-E7-od6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBh-5J-eXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
