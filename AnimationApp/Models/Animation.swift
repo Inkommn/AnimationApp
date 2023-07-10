@@ -6,41 +6,32 @@
 //
 
 struct Animation {
-    var animation: String
-    var curve: String
-    var force: Double
-    var duration: Double
-    var delay: Double
+    let name: String
+    let curve: String
+    let force: Double
+    let duration: Double
+    let delay: Double
+    
+    var description: String {
+        """
+        present: \(name),
+        curve: \(curve),
+        force: \(String(format: "%.02f", force)),
+        duration: \(String(format: "%.02f", duration)),
+        delay: \(String(format: "%.02f", delay)),
+        """
+    }
 }
 
 extension Animation {
     
     static func getRandomAnimation() -> Animation {
-        
-        let animations = DataStore.shared.animations.randomElement()
-        let curves = DataStore.shared.curves.randomElement()
-        
-        let present = animations
-        let curve = curves
-        
-        var force: Double {
-            Double.random(in: 0.5...2.0)
-        }
-        
-        var duration: Double {
-            Double.random(in: 0.3...1.0)
-        }
-        
-        var delay: Double {
-            Double.random(in: 0.3...1.0)
-        }
-        
-        return Animation(
-            animation: present?.rawValue ?? "",
-            curve: curve?.rawValue ?? "",
-            force: force,
-            duration: duration,
-            delay: delay
+        Animation(
+            name: DataStore.shared.animations.randomElement()?.rawValue ?? "slideLeft",
+            curve: DataStore.shared.curves.randomElement()?.rawValue ?? "easeIn",
+            force: Double.random(in: 1...1.5),
+            duration: Double.random(in: 0.8...1.6),
+            delay: 0.3
         )
     }
 }

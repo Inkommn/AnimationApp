@@ -24,35 +24,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="250"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1US-f2-Dy1">
-                                                <rect key="frame" x="16" y="44" width="224" height="164.5"/>
+                                                <rect key="frame" x="16" y="44" width="224" height="27.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="present:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-pX-wab">
-                                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="26.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwH-tr-Rkw">
-                                                        <rect key="frame" x="0.0" y="34.5" width="58.5" height="26.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbd-pc-AXx">
-                                                        <rect key="frame" x="0.0" y="69" width="53.5" height="26.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcX-aX-6ws">
-                                                        <rect key="frame" x="0.0" y="103.5" width="84" height="26.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-1f-mCP">
-                                                        <rect key="frame" x="0.0" y="138" width="56.5" height="26.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation desctiption:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-pX-wab" customClass="SpringLabel" customModule="SpringAnimation">
+                                                        <rect key="frame" x="0.0" y="0.0" width="221.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -90,13 +66,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationLabel" destination="8iB-pX-wab" id="HR3-ge-KBN"/>
                         <outlet property="animationView" destination="HNu-g4-yuW" id="y7z-3i-KL0"/>
-                        <outlet property="curveLabel" destination="kwH-tr-Rkw" id="wfq-jx-4sU"/>
-                        <outlet property="delayLabel" destination="LXZ-1f-mCP" id="KrI-Qp-4KF"/>
-                        <outlet property="durationLabel" destination="wcX-aX-6ws" id="l3H-QO-cpe"/>
-                        <outlet property="forceLabel" destination="Rbd-pc-AXx" id="STT-P3-tNK"/>
-                        <outlet property="presentLabel" destination="8iB-pX-wab" id="rIF-kn-H0K"/>
-                        <outlet property="runButton" destination="DmQ-Bw-AKz" id="O4i-E7-od6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBh-5J-eXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
